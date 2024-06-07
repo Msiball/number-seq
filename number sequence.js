@@ -2,15 +2,22 @@ var output = [];
 var a=1;
 
 function fizzBuzz() {
+if ( a%3 === 0 && a%5 === 0)
+{
+    output.push("FizzBuzz");
+}
+    if (a%3 === 0){
+        output.push("fizz")  
+    }
 
-    if (a % 3 ==== 0){
-        output.push("Fizz");
-    }
+        else if (a%5 === 0){
+            output.push("buzz")
+        }
+            
     else {
-         output.push(a);
+        output.push(a);
     }
-    a=a+1;
+   
+      a++;
     console.log(output);    
 }
-clear()
-
